@@ -10,6 +10,16 @@ This repository holds every word of [Orbit](https://orbitdiscuss.com)'s interfac
 ## Languages
 
 <!-- status:start -->
+| Language | Code | Translated | Progress |
+| --- | --- | --- | --- |
+| French (Français) | `fr` | 2035 / 2035 (100%) | in the apps |
+| Portuguese (Português) | `pt` | 2035 / 2035 (100%) | in the apps |
+| Spanish (Español) | `es` | 2034 / 2035 (99%) | in the apps |
+| Arabic (العربية) | `ar` | 2033 / 2035 (99%) | in the apps |
+| German (Deutsch) | `de` | 2033 / 2035 (99%) | in the apps |
+| Hindi (हिन्दी) | `hi` | 2027 / 2035 (99%) | in the apps |
+| Persian (فارسی) | `fa` | 2018 / 2035 (99%) | in the apps |
+| Japanese (日本語) | `ja` | 2011 / 2035 (98%) | in the apps |
 <!-- status:end -->
 
 English is the source. A language is turned on in the apps once it reaches 90%; strings that aren't translated yet show in English.
