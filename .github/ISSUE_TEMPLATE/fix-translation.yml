@@ -1,0 +1,25 @@
+name: Fix a translation
+description: Report a wrong, unclear or missing translation
+labels: ["translation"]
+body:
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: German
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where did you see it?
+      description: The screen (website, iPhone or Android), and the text you saw. A screenshot helps.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: What should it say?
+  - type: markdown
+    attributes:
+      value: You're also welcome to open a pull request with the fix directly.

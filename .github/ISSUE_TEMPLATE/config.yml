@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Help with the Orbit apps
+    url: mailto:support@orbitdiscuss.com
+    about: Problems with your account or the apps (not their translations)
+  - name: Orbit's rules
+    url: https://github.com/orbitdiscuss/rules
+    about: Community guidelines, moderation and ranking

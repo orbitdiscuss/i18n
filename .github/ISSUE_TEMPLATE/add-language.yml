@@ -1,0 +1,40 @@
+name: Add a language
+description: Start translating Orbit into a new language
+title: "Add <language>"
+labels: ["new-language", "translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for offering to translate Orbit! Check the [open issues](https://github.com/orbitdiscuss/i18n/issues?q=is%3Aissue+label%3Anew-language) first; someone may already be working on your language.
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: The name in English and in the language itself
+      placeholder: Turkish (Türkçe)
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Language code
+      description: Two or three letters, optionally with a region, like tr or pt-BR
+      placeholder: tr
+    validations:
+      required: true
+  - type: dropdown
+    id: help
+    attributes:
+      label: How would you like to help?
+      options:
+        - I'll translate it
+        - I'll translate part of it and others can join
+        - I'd like someone else to translate it
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Formal or informal "you", regional variants, words you're unsure about

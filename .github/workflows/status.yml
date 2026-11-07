@@ -1,0 +1,29 @@
+name: Update status table
+
+on:
+  push:
+    branches: [main]
+    paths: ["translations/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: status
+  cancel-in-progress: false
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rewrite the table in README.md
+        run: python3 scripts/check.py --readme
+      - name: Commit if it changed
+        run: |
+          if git diff --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Update translation status"
+          git push
